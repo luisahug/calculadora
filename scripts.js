@@ -21,5 +21,14 @@ botoes.forEach(button => {
         if(button.id == "backspace"){
             tela.value = telaAtual.slice(0,-1);
         }
+
+        if(button.id == "limpar"){
+            tela.value = "";
+        }
+
+        if(button.id == "igual"){
+            const resultado = math.evaluate(telaAtual);
+            tela.value = resultado;
+        }
     })
 })
