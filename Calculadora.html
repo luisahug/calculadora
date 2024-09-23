@@ -3,41 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <link href="estilo.css" rel="stylesheet" />
     <title>Calculadora</title>
 </head>
 <body>
-    <h1>Calculadora em Javascript</h1>
-    <input type="text" id="tela" readonly>
+    <h1>Calculadora em JavaScript</h1>
 
-    <div>
-        <button id="limpar" value="">C</button>
-        <button id="porcentagem" value="%">%</button>
-        <button id="backspace" value="">←</button>
-        <button id="divisao" value="/">/</button>
+    <div class="fundo_calculadora">
+        <input class = "tela" type="text" id="tela" readonly>
+        <div class="grid-botoes">
+            <div>
+                <button class="col-1" id="limpar" value="">C</button>
+                <button class="col-2" id="porcentagem" value="%">%</button>
+                <button class="col-3" id="backspace" value="">←</button>
+                <button class="col-4" id="divisao" value="/">/</button>
+            </div>
+            <div>
+                <button class="col-1" id="sete" value="7">7</button>
+                <button class="col-2" id="oito" value="8">8</button>
+                <button class="col-3" id="nove" value="9">9</button>
+                <button class="col-4" id="multiplicacao" value="*">*</button>
+            </div>
+            <div>
+                <button class="col-1" id="quatro" value="4">4</button>
+                <button class="col-2" id="cinco" value="5">5</button>
+                <button class="col-3" id="seis" value="6">6</button>
+                <button class="col-4" id="subtracao" value="-">-</button>
+            </div>
+            <div>
+                <button class="col-1" id="um" value="1">1</button>
+                <button class="col-2" id="dois" value="2">2</button>
+                <button class="col-3" id="tres" value="9">9</button>
+                <button class="col-4" id="adicao" value="+">+</button>
+            </div>
+            <div>
+                <button class="botao-0" id="zero" value="0">0</button>
+                <button class="col-3" id="virgula" value=".">,</button>
+                <button class="col-4" id="igual" >=</button>
+            </div>
+        </div>
     </div>
-    <div>
-        <button id="sete" value="7">7</button>
-        <button id="oito" value="8">8</button>
-        <button id="nove" value="9">9</button>
-        <button id="multiplicacao" value="*">*</button>
-    </div>
-    <div>
-        <button id="quatro" value="4">4</button>
-        <button id="cinco" value="5">5</button>
-        <button id="seis" value="6">6</button>
-        <button id="subtracao" value="-">-</button>
-    </div>
-    <div>
-        <button id="um" value="1">1</button>
-        <button id="dois" value="2">2</button>
-        <button id="tres" value="9">9</button>
-        <button id="adicao" value="+">+</button>
-    </div>
-    <div>
-        <button id="zero" value="0">0</button>
-        <button id="virgula" value=".">,</button>
-        <button id="igual" >=</button>
-    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js"></script>
     <script src="scripts.js"></script>   
