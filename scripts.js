@@ -36,4 +36,13 @@ botoes.forEach(button => {
         }
 
     })
+
+    button.addEventListener("mouseover", ()=>{
+        button.style.backgroundColor = "#DCDCDC";
+     })
+     button.addEventListener("mouseout", ()=>{
+        button.style.backgroundColor = "#f3f1f1";
+     })
+
 })
+
