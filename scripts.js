@@ -4,8 +4,12 @@ const operacoes = ["%", "/", "*", "-", "+"];
 
 botoes.forEach(button => {
     button.addEventListener("click", ()=> {
-        const botaoAtual = button.value;
+        const botaoAtual = button.value
         const telaAtual = tela.value;
+
+        if(tela.value[0] === "0"){
+            tela.value = tela.value.slice(1);
+        }
 
         if(operacoes.includes(botaoAtual)){
             if(operacoes.includes(telaAtual.slice(-1))){
@@ -23,12 +27,13 @@ botoes.forEach(button => {
         }
 
         if(button.id == "limpar"){
-            tela.value = "";
+            tela.value = "0";
         }
 
         if(button.id == "igual"){
             const resultado = math.evaluate(telaAtual);
             tela.value = resultado;
         }
+
     })
 })
